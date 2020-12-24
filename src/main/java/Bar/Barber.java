@@ -1,3 +1,5 @@
+package Bar;
+
 import java.util.concurrent.Semaphore;
 
 public class Barber {
@@ -21,18 +23,8 @@ public class Barber {
 
     }
     void barber() {
-        while (true) {
-            P(customer);
-            //等待顾客来理发
-            P(mutex);
-            //申请互斥访问wait
-            wait = wait - 1;
-            // 等待人数减少一人
-            V(mutex);
-            //释放临界资源
-            V(barber);
-            //让理发师去理发
-            System.out.print("我开始理发了");
+        while (true){
+
         }
     }
 
