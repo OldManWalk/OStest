@@ -63,13 +63,17 @@ public class ThreadMode {
             }
         }
     }
-    public void sort(PCBmode[] shuru) {// 比较优先级
-        for (int i = 1; i <= shuru.length; i++) {// 计数，第几轮比较
-            for (int j = 0; j < shuru.length - i; j++) {// 注意这一步，第一趟比较length次，第二趟比较length-1次,以此类推
+    public void sort(PCBmode[] shuru) {
+        // 比较优先级
+        for (int i = 1; i <= shuru.length; i++) {
+            // 计数，第几轮比较
+            for (int j = 0; j < shuru.length - i; j++) {
+                // 注意这一步，第一趟比较length次，第二趟比较length-1次,以此类推
                 if (shuru[j].Super > shuru[j + 1].Super) {
                     PCBmode t = shuru[j];
                     shuru[j] = shuru[j + 1];
-                    shuru[j + 1] = t;// 交换
+                    shuru[j + 1] = t;
+                    // 交换
                 }
             }
         }

@@ -1,4 +1,4 @@
-package PageMemory;
+package StoreManage.PageMemory;
 
 import java.util.ArrayList;
 import java.util.List;

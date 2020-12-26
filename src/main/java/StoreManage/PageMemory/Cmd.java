@@ -1,4 +1,4 @@
-package PageMemory;
+package StoreManage.PageMemory;
 
 public class Cmd {
     private String operation;

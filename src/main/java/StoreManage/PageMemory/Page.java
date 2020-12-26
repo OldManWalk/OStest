@@ -1,4 +1,4 @@
-package PageMemory;
+package StoreManage.PageMemory;
 
 /**
  *
