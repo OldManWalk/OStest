@@ -17,6 +17,7 @@ class phiPerson implements Runnable{ //实现Runnable接口
         this.pos = position;
     }
 
+    @Override
     public void run() {
         //重写run方法
         // TODO Auto-generated method stub
